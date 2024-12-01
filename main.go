@@ -13,10 +13,10 @@ func main() {
 		log.Fatalf("Error loading .env file: %v", err)
 	}
 
-	dbHost := env.GetEnv("DB_HOST", "localhost")
-	dbPort := env.GetEnv("DB_PORT", "3306")
-	dbUser := env.GetEnv("DB_USER", "root")
-	dbPass := env.GetEnv("DB_PASS", "password")
+	dbHost := env.GetEnv("DB_HOST")
+	dbPort := env.GetEnv("DB_PORT")
+	dbUser := env.GetEnv("DB_USER")
+	dbPass := env.GetEnv("DB_PASS")
 
 	fmt.Printf("Database Details:\n")
 	fmt.Printf("Host: %s\n", dbHost)
