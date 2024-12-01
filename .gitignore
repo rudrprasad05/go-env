@@ -1,0 +1,16 @@
+# Ignore Go binaries
+/bin/
+/obj/
+
+# Ignore vendor directory
+/vendor/
+
+# Ignore Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignore .env files for security reasons
+.env
