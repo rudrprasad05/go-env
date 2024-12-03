@@ -37,6 +37,7 @@ func LoadEnv(filename string) error {
 
 func GetEnv(key string) string {
 	value := os.Getenv(key)
+	value = strings.ReplaceAll(value, " ", "")
 	if value == "" {
 		fmt.Println("env not found key: ", key)
 	}
